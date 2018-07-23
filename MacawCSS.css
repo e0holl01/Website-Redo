@@ -1,9 +1,21 @@
 body 
     {
         background-color: honeydew;
-        max-width: 1000px;
+        width: 100%;
+        margin-right: 0px;
         
 }
+
+.row {
+    padding-top: 10px;
+    margin: 0;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
 
 .macaw-img {
     border-radius: 50%;
@@ -11,9 +23,30 @@ body
     margin-right: 25%;
 }
 
-
+.main-content {
+    margin-left: 70px;
+}
 .map-macaw {
     margin-left: 25%;
+}
+
+.secondary-content {
+    padding: 0;
+    margin-left: 160px;
+}
+
+.little-facts {
+    font-size: 25px;
+    padding-top: 5px;
+}
+
+h5 {
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+.sidebarnav {
+    padding-left: 25px;
 }
 
 .sidenav {
@@ -32,9 +65,9 @@ body
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 6px 0;
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 18px;
     color: black;
     display: block;
 }
@@ -53,11 +86,19 @@ body
     margin-left: 165px;
     margin-right: -116px;
 }
-.secondary-content {
-    padding: 0;
-    margin-left: 150px;
+
+footer {
+
+background-color: #41b3ab; 
+
 }
 
+.Phone,
+.tollfreePhone,
+.Email,
+.International {
+    color: white;
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
