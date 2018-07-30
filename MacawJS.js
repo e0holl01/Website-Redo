@@ -3,3 +3,9 @@ $(function(){
         $(".sidenav").slideToggle();
     })
 })
+
+
+
+function myFunction(x) {
+    x.classList.toggle("change");
+}
