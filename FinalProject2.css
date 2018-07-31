@@ -1,0 +1,797 @@
+/*------------------------ Mobile First Approach--------------------------------------------------------- */
+
+header{
+    
+     background-color: black;
+     width: 100%;;
+   
+
+   } 
+
+   .main-header {
+    width:  unset;
+
+    }
+
+
+footer {
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: left;
+    display: none;
+}
+
+.contact-footer {
+    display: none;
+}
+
+.copyright {
+    display: none;
+}
+
+small {
+    text-align: right;
+    float: right;
+    margin-top: -23px;
+    margin-right: 10px;
+    padding-top: 0;
+    color: #edc7b7;
+    
+  
+}
+
+body {
+    background-color: #eee2dc;
+ 
+    }  
+
+
+/* ===========Title - QA by Erica =========================================================================== */
+.title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #edc7b7;  
+    z-index: 1;
+    top: 1%;
+    left: 6px;
+    font-size: 20px;
+    position: relative;
+    display: none;
+    
+}
+
+
+/*==========Pseudo-element for Title ========================================================================= */
+.title::before,
+.title::after {
+    content: "";     
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #edc7b7;
+    margin: 0 20px;
+  
+} 
+    
+    h2,
+    th, 
+    td {
+        color: #ac3b61;
+        font-size: small;
+        
+    }
+
+ /*===========Mobile Menu ================================================================================= */
+
+.mobileToggle {  
+    
+    color: #f8e981;
+    position: relative;
+    top: 0px;
+    right: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: medium;
+    display: inline-block;
+    cursor: pointer;
+    content: "Menu";
+    
+}
+
+.mobileToggle:hover {
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #f8e981;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar1::after {
+    content: "Menu";
+    margin-left: 41px;
+    font-size: large;
+}
+
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+    
+}
+.change .bar1::after {
+    display: none;
+}
+
+.change::after{
+    content: "Close";
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.nav {
+   
+    width: 100%;
+    background: black;  
+    position: relative;
+    text-align: right;
+    top: 0px;
+    margin-top: 0px;
+    margin-left: 4px;
+    padding-top: 5px;
+    background-color: black;
+    box-sizing: unset;
+    font-size: small;
+   
+}
+
+
+
+div.main-nav{
+    display: none;
+    text-decoration: none;
+    width: 100%;
+     
+}
+
+.main-nav li{
+    list-style: none;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    margin-left: 15px;
+    box-sizing: unset;
+
+    
+}
+
+ /* ==========Pseudo-element for Nav Items ==================================================================== */
+li::before
+ {
+    display: none;
+    content: "";              
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #edc7b7;
+    margin-right: 5px;
+           
+    }  
+
+
+/*=========== Nav Link Styles================================================================================== */
+li a {
+    color: #edc7b7;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+ }  
+
+
+
+
+a {
+    text-decoration: none;
+    }
+
+a:hover {
+    color: #ac3b61;
+
+    
+}
+
+
+.linkedin {
+    color: #f8e981;
+    font-weight: bold;
+      
+}
+.linkedin:visited{
+    color: #f8e981;
+
+}   
+
+/*=========== Home Page==================================================================================== */
+.row {
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.col-sm-5 {
+    display: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.col-sm-7 {
+    padding: 0;
+}
+
+.main-testing {
+    margin-top: 0px;
+    word-wrap: break-word;
+    line-break: auto;
+    margin: auto;
+   
+    
+}
+
+
+.h1 {
+    color: #123c69;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    font-size: small;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold
+}
+
+.lead {
+    color: #123c69;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    font-size:small ;
+    line-height: 20px;
+    text-align: left;
+    margin: 0;
+}
+
+
+   .uat-page {
+    color: #123c69;
+    font-weight: bold;
+    text-decoration:underline;     
+}
+
+.uat-page:visited{
+    color: #ac3b61;
+
+}   
+
+
+.performance-page {
+    color: #123c69;
+    font-weight: bold;
+    text-decoration:underline;     
+}
+
+.performance-page:visited{
+    color: #ac3b61;
+
+}   
+
+.consult-page {
+    color: #123c69;
+    font-weight: bold;
+    text-decoration:underline;     
+}
+
+.consult-page:visited{
+    color: #ac3b61; 
+
+}   
+
+/*=========== UAT Page===================================================================================== */
+
+.uat-testing {
+    margin: 0 auto;
+    width: 100%
+}
+
+
+.endtest {
+    color: #123c69;
+    font-weight: bold;
+    text-decoration:underline;     
+}
+
+.endtest:visited{
+    color: #ac3b61;
+
+}
+
+   /*=========== Performance Page========================================================================== */
+.performance-testing {
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.blazemeter {
+    color: #123c69;
+    font-weight: bold;
+    text-decoration:underline;     
+}
+
+.blazemeter:visited{
+    color: #ac3b61;
+
+}
+
+/*=========== Schedule a Consultation page================================================================= */
+
+.scheduleConsult-heading {
+    display: none;
+   
+    }
+form {
+
+    display: table-cell;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 50%;
+    vertical-align: middle;
+    width: 100%;
+    position: center;
+    color: #123c69;
+    
+        
+}
+
+
+
+.form-consult {
+    padding: 0px 25px;
+    display: 100%;
+      
+} 
+
+.form-consult:focus-within {
+
+    box-shadow: 0px 0.2em 2.5em #c4c4c4;
+    transform: scale(1.025); 
+}
+
+
+#companyname, #firstname, #lastname, #email, #phonenumber {
+    text-transform: uppercase;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="radio"]
+textarea {
+    font-size: 1em;
+    color: black;
+    font-weight: 300; 
+    width: 100%;
+    border-style: groove;
+    height: auto;
+    padding: 15px;
+    outline: 0;
+    margin-bottom: 1.2em;
+    border-radius: 1.3em;
+    border-bottom: 3px solid darkgray;
+    background-color: whitesmoke;
+    
+   
+}
+
+
+label {
+  display:block;
+  margin-bottom: 0.5em;
+  color: #123c69;
+   
+}
+
+textarea {
+    background-color: whitesmoke;
+    border-style: groove;
+    width: 100%;
+    height: 150px;
+    resize: none;
+    margin-bottom: 1.2em;
+    border-radius: 1.3em;
+    border-bottom: 3px solid darkgray;
+    background-color: whitesmoke;
+    padding: 10px;
+    
+}
+
+
+#submit {
+    cursor: pointer;  
+    font-size: 1em;
+    font-weight: 300;
+    color: #ac3b61;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    box-shadow:inset 0 1px 0 rgba(0,0,0,0.03) ;
+    margin-bottom: 41px;
+    margin-top: -4px;
+    padding-bottom: 0px;
+  
+}
+
+
+
+input:required:focus {
+    border:1px solid tomato;
+}
+
+#flashMessage {
+    display: block;
+    width: 100%;
+    margin-top: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1em;
+    text-align: center;
+    
+}
+
+
+
+#container-consult {
+	max-width: 500px;
+    margin: auto;
+    box-sizing: border-box;
+    display: block;
+  }
+     
+
+
+/*=========== Media Queries========================================================================== */
+
+@media(min-width:319px) {
+
+    .col-sm-5 {
+        display: table;
+    }
+
+    .title {
+        float: right;
+        display: inline;
+        font-size: medium;
+        padding-right: 15px;
+        margin-right: 5px;
+        top: 6px;
+        margin-bottom: 0;
+        margin-top: 3px;
+
+    }
+    .title::before,
+    .title::after {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+    h2 {
+        font-size: medium;
+        padding-top: 10px;
+    }
+    th {
+        font-weight: 400;
+    }
+
+    tr {
+        font-weight: bold;
+        padding-bottom: 20px;
+        
+    }
+
+    table {
+        border-bottom: 1pt solid #ac3b61;
+        
+
+    }
+
+
+   li a {
+     
+        margin-left: 5px;
+        font-size: 14px;
+    } 
+
+
+     li::before
+    {
+        display: inline-block;
+              
+       } 
+
+    
+    .uat-testing,
+    .performance-testing
+        {
+        margin-top: 5px;
+        word-wrap: break-word;
+        line-break: auto;
+        margin: auto;
+    }
+
+   .h1 {
+        font-size: medium;
+        text-align: center;
+        
+    }    
+    
+    .lead 
+    {
+    font-size: small;
+    text-align: left;
+    margin-top: 10px;
+
+    }    
+
+    .container-fluid {
+    margin: 0;
+    padding: 0;
+    
+    }
+    
+
+    #container-consult {
+        font-size: medium;
+    } 
+
+} 
+
+@media(min-width: 412px) {
+
+li::before {
+    margin-left: 10px;
+    }
+
+li a {
+    font-size: medium;
+    }
+
+.lead {
+    font-size: 14px;
+    }
+
+.scheduleConsult-heading {
+    display: block;
+    font-size: 20px;
+
+    }
+
+}
+
+
+@media(min-width: 450px) {
+    #bodyConsultFrom {
+        width: fit-content;
+
+    }
+}
+
+   
+
+
+
+@media(min-width:576px) {
+   
+    
+    
+    .col-sm-5 {
+        display: inline-block;
+        
+    }
+
+    table {
+        border-bottom: none;
+        border-right: 1pt solid #ac3b61;
+    
+    } 
+
+}
+
+@media(min-width: 700px){
+
+    .mobileToggle {
+        display: none;
+    }
+
+    .title {
+
+        display: inline-block;
+        top: 63px;
+        float: left;
+        position: sticky;
+    }
+
+    header {
+        width: 100%;
+        margin-top: -60px;
+        padding-top: 0px;
+        padding-bottom: 15px;     
+
+    }
+
+    .nav {
+        display: inline-block;
+        position: relative;
+        margin-left: 0px;
+        margin-top: 25px;
+        top: 10px;
+        width: -webkit-fill-available;
+             
+    }
+
+    .main-nav {
+        display: inline !important;
+    }
+
+
+    .main-nav li{
+        width: 5rem;
+        display: inline-block;
+        padding-left: 15px;
+        margin-right: 15px;
+        vertical-align: middle;
+      
+    }
+
+
+
+    li::before {
+        display: none;
+    }
+
+
+    .scheduleConsult-heading{
+        margin-top: 45px;
+
+    }
+
+ 
+    footer {
+    
+    width: 100%;
+    position: fixed;
+    display: inline;    
+    background-color: black;
+            
+    } 
+
+    .contact-footer {
+
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-left: 5px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #f8e981;
+        text-align: left;
+        background: black;
+        display: inline;
+    }
+
+    .copyright,
+    small {
+        float: right;
+        display: inline-block;
+        margin-top: 0px;
+        margin-right: 10px;
+        padding-top: 0;
+        color: #edc7b7
+
+    }
+}
+
+@media (min-width: 917px) {
+    .main-nav li {
+        width: auto;
+    }
+
+    .title {
+        position: relative;
+    }
+
+    .scheduleConsult-heading{
+        margin-top: 25px;
+    }
+
+
+    .col-sm-5 {
+        max-width: 587px;
+        margin-left: auto;
+    }
+
+    .col-sm-7 {
+        max-width: 700px;
+        margin-right: auto;
+
+    }
+}
+@media(min-width:992px) {
+    .uat-testing,
+    .performance-testing {
+        max-width: 700px;
+    }
+
+}
+
+    
+@media(min-width: 1231px){
+
+    .nav li{
+        width: 9%;
+        margin-right: 15px;
+        display: inline !important;
+     }
+
+     .title {
+         font-size: larger;
+     }
+
+
+
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+
+    .main-nav li {
+        width: auto;
+    }
+    
+    li a {
+        white-space: nowrap;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        left: 10px;
+        
+    }
+
+
+}
+
+
+

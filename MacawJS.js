@@ -1,6 +1,6 @@
 $(function(){
     $(".mobileToggle").click(function(){
-        $(".sidenav").slideToggle();
+        $(".sidebarnav").slideToggle();
     })
 })
 
