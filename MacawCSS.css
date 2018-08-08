@@ -1,3 +1,6 @@
+html {
+    width: fit-content;
+}
 body 
     {
         background-color: honeydew;
@@ -8,8 +11,9 @@ body
 
 header {
     background-color: #41b3ab;
-    width: 100%;
+    width: -webkit-fill-available;
 }
+
 
 footer {
     display:  none;
@@ -19,16 +23,26 @@ footer {
 
 
 /*===========Mobile Menu ================================================================================= */
+.h5 {
+    text-align: center;
+    text-decoration-line: underline;
+    color:#41b3ab;
+    display: inherit;
+    font-size: 40px;
+
+}
+
+
 
 .mobileToggle {  
     
     color: whitesmoke;
     position: relative;
-    top: 0px;
+    top: -15px;
     right: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    margin-left: 5px;
+    margin-left: 10px;
     font-size: medium;
     display: inline-block;
     cursor: pointer;
@@ -80,6 +94,8 @@ footer {
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
+
+
 /*===================================================== */
 
 .sidebarnav {
@@ -105,8 +121,9 @@ footer {
 }
 
 .container-fluid {
-    margin: 0;
     padding: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -117,39 +134,42 @@ footer {
 }
 
 .main-content {
-    margin-left: 70px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 30px;
+    
 }
 .map-macaw {
     margin-left: 25%;
 }
 
 .secondary-content {
-    padding-left: 40px;
-    margin-left: 160px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+
 .little-facts {
-    font-size: 25px;
+    font-size: 30px;
     padding-top: 5px;
 }
 
-
-h5 {
-    text-align: center;
-    text-decoration-line: underline;
-    color:whitesmoke;
-    display: none;
-
+.info {
+    font-size: 30px;
 }
+
+
 
 .logo {
     height: 87px;
     margin: 5px;
+    display: none;
+
 }
 
 .sidenav {
         height: auto; /* Full-height: remove this if you want "auto" height */
-        width: 200px; /* Set the width of the sidebar */
+        width: -webkit-fill-available; /* Set the width of the sidebar */
         position: fixed; /* Fixed Sidebar (stay in place on scroll) */
         z-index: 1; /* Stay on top */
         top: 0; /* Stay at the top */
@@ -157,7 +177,7 @@ h5 {
         background-color: #41b3ab; 
         overflow-x: hidden; /* Disable horizontal scroll */
         padding-top: 48px;
-        padding-bottom: 0;
+        padding-bottom: 12px;
    
            
 }
@@ -168,7 +188,7 @@ h5 {
 .sidenav a {
     padding: 6px 0;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 40px;
     color: #374785;
     display: block;
 }
@@ -196,12 +216,15 @@ h5 {
 
 .site-header /*logo*/ 
     {
-        margin-left: 160px;
+        margin-left: 110px;
+        width: inherit;
     }
 
 .title {
-    margin-left: 165px;
-    margin-right: -116px;
+    width: 450px;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -218,6 +241,23 @@ h5 {
 
 
 /*==================== Media Queries============== */
+
+@media(min-width: 320px) {
+    
+
+}
+
+@media(min-width: 576px) {
+    .col-sm-3 {
+        min-width: 500px;
+
+    }
+    .col-sm-6 {
+        min-width: 500px;
+    }
+
+}
+
 
 
 
