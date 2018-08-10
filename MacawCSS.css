@@ -108,6 +108,7 @@ footer {
     top: 0px;
     margin-top: 0px;
     margin-left: 4px;
+    margin-right: 4px;
     padding-top: 5px;
     box-sizing: unset;
     font-size: small;
@@ -243,9 +244,38 @@ footer {
 /*==================== Media Queries============== */
 
 @media(min-width: 320px) {
-    
+    .h5 {
+        font-size: 28px;
+    }
+    .sidenav a {
+        font-size: 26px;
+    }
 
+    .sidenav {
+        padding-top: 25px;
+        padding-bottom: 0px;
+    }
+
+    .title {
+        padding-top: 55px;
+    }
+
+    .little-facts {
+        font-size: 26px;
+    }
+
+    .info {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    .main-content {
+        font-size: 22px;
+    }
 }
+
+
 
 @media(min-width: 576px) {
     .col-sm-3 {
@@ -269,8 +299,60 @@ footer {
 
     .sidenav {
         display: inline;
+      
+        padding-right: 10px;
         
     }
 
+    .h5 {
+        font-size: 20px;
+    }
+
+    footer {
+        display: inline;
+           }
+    .contact-info {
+        background: #41b3ab;
+        position: sticky;
+        
+    }
+
+    .sidebarnav {
+        display: inline-flex;
+   
+        
+    }
+    .nav-tabs {
+        border: none;
+       
+    }
+
+    a.nav-link {
+        font-size: medium;
+        width: 118px;
+        height: 55px;
+        margin: 0;
+        display: -webkit-inline-box;
+    }
+
+    .title {
+        padding-top: 0px;
+    }
+
+    .main-content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo {
+        background: #41b3ab;
+        display: inline;
+    }
+
+    .site-header {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 100px;
+    }
 }
     
