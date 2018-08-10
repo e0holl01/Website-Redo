@@ -179,6 +179,7 @@ footer {
         overflow-x: hidden; /* Disable horizontal scroll */
         padding-top: 48px;
         padding-bottom: 12px;
+        padding-right: 10px;
    
            
 }
@@ -254,6 +255,7 @@ footer {
     .sidenav {
         padding-top: 25px;
         padding-bottom: 0px;
+        padding-right: 10px;
     }
 
     .title {
